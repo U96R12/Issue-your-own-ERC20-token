@@ -1,12 +1,12 @@
 pragma solidity ^0.4.18;
 
 // ----------------------------------------------------------------------------
-// '0Fucks' token contract
+// '10000000 WCPtoken contract
 //
-// Deployed to : 0x5A86f0cafD4ef3ba4f0344C138afcC84bd1ED222
-// Symbol      : 0FUCKS
-// Name        : 0 Fucks Token
-// Total supply: 100000000
+// Deployed to : 5e5fd7f8462a949cc8b5806695d7c4fb52d732ada3812cf29b98495232d5da6d
+// Symbol      : 10000000 WCP
+// Name        : 10000000 WCP Token
+// Total supply: 10000000000000000000000000 WCP
 // Decimals    : 18
 //
 // Enjoy.
@@ -99,7 +99,7 @@ contract Owned {
 // ERC20 Token, with the addition of symbol, name and decimals and assisted
 // token transfers
 // ----------------------------------------------------------------------------
-contract FucksToken is ERC20Interface, Owned, SafeMath {
+contract WCPToken is ERC20Interface, Owned, SafeMath {
     string public symbol;
     string public  name;
     uint8 public decimals;
@@ -112,13 +112,13 @@ contract FucksToken is ERC20Interface, Owned, SafeMath {
     // ------------------------------------------------------------------------
     // Constructor
     // ------------------------------------------------------------------------
-    function FucksToken() public {
-        symbol = "0FUCKS";
-        name = "0 Fucks Token";
+    function WCPToken() public {
+        symbol = "10000000 WCPToken";
+        name = "10000000 WCPToken";
         decimals = 18;
-        _totalSupply = 100000000000000000000000000;
-        balances[0x5A86f0cafD4ef3ba4f0344C138afcC84bd1ED222] = _totalSupply;
-        Transfer(address(0), 0x5A86f0cafD4ef3ba4f0344C138afcC84bd1ED222, _totalSupply);
+        _totalSupply = 10000000000000000000000000;
+        balances[5e5fd7f8462a949cc8b5806695d7c4fb52d732ada3812cf29b98495232d5da6d] = _totalSupply;
+        Transfer(address(0), 5e5fd7f8462a949cc8b5806695d7c4fb52d732ada3812cf29b98495232d5da6d, _totalSupply);
     }
 
 
